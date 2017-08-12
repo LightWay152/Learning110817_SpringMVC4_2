@@ -1,0 +1,29 @@
+﻿SpringMVC4_2 project
+
+1/ src -> nhatnghe.bean:
+- MailInfo: bean object with setter/getter
+- Mailer: check Send mail method
+- XMailer: 
+  + Regular expression use to Replace whitespace and commas "," by an commas "," in the code
+  + 3 send mail method, base on parameter to know how to use it
+
+2/ src -> nhatnghe.controller:
+- UploaderController: upload file function
+(vd: edit link on browser to .../uploader/index.php to run test this function)
+- MailerController: send mail function
+(vd: edit link on browser to .../mailer/index.php to run test this function)
+
+3/ WebContent: create index.jsp file at here
+
+4/ WebContent -> images: create data.txt file at here
+
+5/ WebContent -> WEB-INF:
+(should be create views folder, configs at here for security)
+- lib: remmember copy all of libs to use spring framework and some others libs
+- spring-configs: 
+  + spring-config-mvc.xml file: configs view and controller
+  + spring-config-upload.xml file: config for upload file function
+  + spring-config-gmail.xml file: config for send mail function
+- views: include all view (jsp file) of project
+
+6/ WebContent -> web.xml: configs Dispatcher and UTF-8 Filter
